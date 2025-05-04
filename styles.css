@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body.cyberpunk {
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  color: #00ffcc;
+  text-shadow: 0 0 5px #00ffcc;
+  width: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.popup-container, .config-container {
+  width: 100%;
+  max-width: 320px;
+  padding: 20px;
+  background: rgba(26, 26, 26, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+}
+
+h2 {
+  font-size: 18px;
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.current-url {
+  word-break: break-all;
+  margin-bottom: 15px;
+  padding: 8px;
+  background: #1a1a1a;
+  border-radius: 4px;
+  font-size: 14px;
+  border-left: 3px solid #00ffcc;
+  box-shadow: 0 0 8px rgba(0, 255, 204, 0.3);
+}
+
+#loading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.loading-animation {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(0, 255, 204, 0.3);
+  border-top-color: #00ffcc;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loading-text {
+  color: #00ffcc;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+#results {
+  margin-top: 10px;
+  display: block;
+}
+
+.warning-header {
+  color: #ff004d;
+  text-shadow: 0 0 5px #ff004d;
+  margin-top: 10px;
+}
+
+.safe-header {
+  color: #00ffcc;
+  text-shadow: 0 0 5px #00ffcc;
+  margin-top: 10px;
+}
+
+.error-header {
+  color: #ffcc00;
+  text-shadow: 0 0 5px #ffcc00;
+  margin-top: 10px;
+}
+
+.result {
+  margin: 10px 0;
+  padding: 10px;
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+
+.result.malicious {
+  border-left: 3px solid #ff004d;
+}
+
+.result.safe {
+  border-left: 3px solid #00ffcc;
+}
+
+.result.error {
+  border-left: 3px solid #ffcc00;
+}
+
+.service-name {
+  font-weight: bold;
+}
+
+.verdict {
+  font-weight: bold;
+}
+
+.verdict.malicious {
+  color: #ff004d;
+}
+
+.verdict.safe {
+  color: #00ffcc;
+}
+
+.verdict.error {
+  color: #ffcc00;
+}
+
+.error-message {
+  color: #ffcc00;
+  margin-top: 5px;
+}
+
+.details {
+  font-size: 12px;
+  color: #cccccc;
+  margin-top: 5px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Styles for options.html */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  color: #00ffcc;
+  text-shadow: 0 0 5px #00ffcc;
+  margin-bottom: 8px;
+}
+
+.cyberpunk-input {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  border: 2px solid #00ffcc;
+  border-radius: 6px;
+  color: #00ffcc;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+  box-shadow: 0 0 8px rgba(0, 255, 204, 0.5);
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.cyberpunk-input:focus {
+  outline: none;
+  border-color: #ffcc00;
+  box-shadow: 0 0 12px #ffcc00;
+  text-shadow: 0 0 5px #ffcc00;
+}
+
+.cyberpunk-button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  border: 2px solid #00ffcc;
+  border-radius: 6px;
+  color: #00ffcc;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 0 0 5px #00ffcc;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 255, 204, 0.5);
+  transition: all 0.3s ease;
+}
+
+.cyberpunk-button:hover {
+  background: linear-gradient(135deg, #00ffcc, #00cc99);
+  color: #1a1a1a;
+  text-shadow: none;
+  box-shadow: 0 0 15px #00ffcc;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 8px rgba(0, 255, 204, 0.5); }
+  50% { box-shadow: 0 0 15px rgba(0, 255, 204, 1); }
+  100% { box-shadow: 0 0 8px rgba(0, 255, 204, 0.5); }
+}
+
+.status-message {
+  margin-top: 15px;
+  padding: 10px;
+  background: #1a1a1a;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.status-message.show {
+  opacity: 1;
+}
+
+.status-message.success {
+  color: #00ffcc;
+  border-left: 3px solid #00ffcc;
+  box-shadow: 0 0 8px rgba(0, 255, 204, 0.5);
+}
+
+.status-message.error {
+  color: #ffcc00;
+  border-left: 3px solid #ffcc00;
+  box-shadow: 0 0 8px rgba(255, 204, 0, 0.5);
+}
