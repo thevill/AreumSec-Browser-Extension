@@ -41,7 +41,6 @@ AreumSec does not collect, use, or sell any user data. All data processing (URLs
 
 If AreumSec introduces new features, we may process additional data, such as:
 - **User Preferences**: Settings like notification preferences, stored in `chrome.storage.sync` to customize your experience.
-- **Anonymous Usage Statistics**: Aggregated, non-identifiable metrics (e.g., number of URLs checked) to improve the extension, with user consent and opt-out options.
 
 Any future data processing will be minimal, transparent, and require your explicit consent. We will update this Privacy Policy and notify users of changes.
 
@@ -92,11 +91,10 @@ AreumSec is not directed at children under 13. We do not knowingly process data 
 
 We may update this Privacy Policy to reflect new features or legal requirements. The latest version will be posted on our website or linked in the Chrome Web Store listing, with the “Last Updated” date revised. Significant changes will be communicated via the extension or store listing.
 
-## Contact Us
+## Contact
 
 If you have questions about this Privacy Policy or AreumSec’s data practices, contact us at:
-- **Email**: [Insert your support email, e.g., support@areumsec.com]
-- **Website**: [Insert your website, if applicable, e.g., https://areumsec.com]
+- **Email**: pranay.wajjala.1@gmail.com
 
 We are committed to addressing your concerns promptly.
 
