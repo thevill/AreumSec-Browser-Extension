@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AreumSec</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="cyberpunk">
+  <div class="popup-container">
+    <div class="header-container">
+      <img src="icon128.png" alt="AreumSec Logo" width="50" height="50">
+      <h2>AreumSec</h2>
+    </div>
+    <div class="current-url" id="current-url">No URL detected</div>
+    <div id="loading" style="display: none;">
+      <div class="loading-animation"></div>
+      <span class="loading-text">Scanning...</span>
+    </div>
+    <div id="results"></div>
+    <div class="retry-button-container" id="retryButton" style="display: none;">
+      <button id="retry" class="cyberpunk-button">Retry Scan</button>
+    </div>
+    <div id="apiHint" class="hint" style="display: none; margin-top: 15px; font-size: 12px; color: #00ffcc; text-align: center;">
+      Add VirusTotal & Google Safe Browsing API keys in the <a href="#" data-options-link style="color: #00ffcc; text-decoration: none;">Extension Options</a> for stricter detection
+    </div>
+    <div style="margin-top: 10px; text-align: center;">
+      <a href="https://www.buymeacoffee.com/pranaywajjala" target="_blank" rel="noopener noreferrer">
+        <img src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg" 
+             alt="Buy Me a Coffee" style="height: 40px;">
+      </a>
+
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

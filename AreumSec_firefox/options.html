@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AreumSec: Configuration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="cyberpunk">
+  <div class="config-container">
+    <div class="header-container">
+      <img src="icon128.png" alt="AreumSec Logo" width="50" height="50">
+      <h2>AreumSec Configuration</h2>
+    </div>
+    <div class="input-group">
+      <label for="vtApiKey">VirusTotal API Key</label>
+      <input type="text" id="vtApiKey" placeholder="Enter VirusTotal API Key" class="cyberpunk-input">
+    </div>
+    <div class="input-group">
+      <label for="gsbApiKey">Google Safe Browsing API Key</label>
+      <input type="text" id="gsbApiKey" placeholder="Enter Google Safe Browsing API Key" class="cyberpunk-input">
+    </div>
+    <button id="save" class="cyberpunk-button">Save Configuration</button>
+    <div id="status" class="status-message"></div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
